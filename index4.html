@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8"/>
+ <!--  <meta name="viewport" 
+	content="width=device-width, initial-scale=0.3, maximum-scale=0.3, user-scalable=0">-->
+  
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body bgcolor="black">
+
+	<style>
+	  
+	 body,html{ min-height: 100%; height: 100%;}
+
+	 
+	 .LIST_SPACE{
+	 width:3%;
+	 background-color:red;
+	 }
+	  
+	 .LISTA_1{
+	 width:20%;
+	// display: table;
+	 //background-color:#0000AAAA;
+	 
+	 
+	
+	  }
+	  
+	  .LISTA_2{
+	  width:20%;
+	 //display: table;
+	 
+	// background-color:#0000AAAA;
+	 
+	 
+	 
+	  }
+	  
+	  .LISTA_3{
+	  width:20%;
+	  //display: table;
+	  
+	  //background-color:#0000AAAA;
+	  }
+	  
+	  .Bloco_fundo{
+	  width:100%;
+	  //height:220px;
+	  background-image:url("image/bandeira.png");
+	  background-size:100% 100%;
+	  background-repeat:no-repeat;
+	  background-position:center;
+	  
+	  display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	  align-items:center;
+	 
+	// background-color:red;
+	
+	
+	  
+	  
+	  }
+	  
+	  .Bloco{
+	  width:100%;
+	  // height:220px;
+	  background-size:100px 100px;
+	  background-repeat:no-repeat;
+	  background-position:center;
+	  background-color:transparent;
+	  display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	  align-items:center;
+	  }
+	  
+	  
+	  
+	  .ViewDesigner{
+	  position:fixed;
+	  
+	  left:0;
+	  right:0;
+	  top:0;
+	  bottom:0;
+	  width:100%;
+	  height:100%;
+	  alpha:0.5f;
+	  display:table;
+	  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf2geTTogmZEY3pgmpx_7ir5FgucqleQcCKg&usqp=CAU");
+	  background-repeat:no-repeat;
+	  background-size:100%,100%;
+	  }
+	  
+	  
+	  .DesignTop{
+	  width:100%;
+	  height:20%;
+	  //background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf2geTTogmZEY3pgmpx_7ir5FgucqleQcCKg&usqp=CAU");
+	  //background-size:100%,50%;
+	  //background-color:blue;
+	  //z-index:1000;
+	  }
+	  
+	  .Telhado_1{
+	  width:100%;
+	  height:17%;
+	  background-image:url("image/telhado.png");
+	  background-repeat:no-repeat;
+	  background-position:bottom;
+	  
+	  background-size:100%,100%;
+	  
+	  transform:translate(0px,0px);
+	  
+	  border:0;
+	  margin:0;
+	  
+	 // opacity:0.9;
+	  
+	// background-color:#0000AAAA;
+	  
+	//z-index:2000;
+	  }
+	  
+	  .VIEW_LISTAS{
+	 //width:100%;
+	 height:34.5%;
+	 //margin-top:60.3%;
+	 display:flex;
+	 justify-content:center;
+	 align-items:center;
+	 background-image:url("image/image14.png");
+	 background-repeat:no-repeat;
+	 background-size:100% 100%;
+	 
+	// background-color:#0000AAAA;
+	 
+	 border:0;
+	  margin:0;
+	  
+	 // z-index:-1;
+	 
+	// background-color:red; 
+	  
+	 }
+	   .DesignBottom{
+	   position:fixed;
+	  width:100%;
+	  //height:30.5%;
+	  height:30.5%; 
+	  background-image:url("image/bottom_background.png");
+	  background-position:center;
+	  background-repeat:no-repeat;
+	  background-size:cover,cover;
+	  //z-index:2009;
+	  
+	  background-color:red;
+	  }
+	  
+	  .DesignCenter{
+	  position:fixed;
+	  left:0;
+	  top:0;
+	  right:0;
+	  bottom:0;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  width:100%;
+	  height:34.5%;
+	  margin-top:57.5%;
+	  background-color:#0000AAAA;
+	  }
+	 
+	  
+	  
+	  .TopImage{
+	  width:50%;
+	  height:100%;
+	  //padding-top:10%;
+	  background-image:url("image/avatar.gif");
+	  background-repeat:no-repeat;
+	  background-position:bottom;
+	  border:0;
+	  margin:0;
+	 // background-color:red;
+	  }
+	  
+	  .Fundo{
+	  position:fixed;
+	  left:0;
+	  top:0;
+	  right:0;
+	  bottom:0;
+	  width:100%;
+	  height:100%;
+	  background-size:cover;
+	  background-color:red;
+	  }
+	  
+	  
+	  
+	  .Pilar_1{
+	  width:100%;
+	  height:100%;
+	 // background-image:url("image/pilar_1.png");
+	  background-repeat:no-repeat;
+	  background-position:left;
+	  background-size:250px 920px;
+	  }
+	  
+	  .Pilar_2{
+	  width:100%;
+	  height:100%;
+	 // background-image:url("image/pilar_2.png");
+	  background-repeat:no-repeat;
+	  background-position:right;
+	  background-size:250px 920px;
+	  }
+	  
+	  .PLAY{
+	  width:30%;
+	  height:100%;
+	  //margin-top:40%;
+	  
+	  background-image:url("image/play.png");
+	  background-size:100%,100%;
+	  background-repeat:no-repeat;
+	  background-position:center;
+	  
+	  background-color:transparent;
+	  
+	  border:none;
+	  }
+	  
+	  .ViewPontos{
+	  padding-top:10%;
+	  position:absolute;
+	  z-index:2002;
+	  width:100%;
+	  height:12%;
+	  display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	  align-items:center;
+	  }
+	  
+	  #Ponto_1{
+	  width:80px;
+	  height:80px;
+	  background-size:100%,100%;
+	  color:transparent;
+	  display:none;
+	  }
+	  #Ponto_2{
+	  color:#E9C55F;
+	  display:none;
+	  }
+	  #Ponto_3{
+	  width:80px;
+	  height:80px;
+	  background-size:100%,100%;
+	  color:transparent;
+	  display:none;
+	  }
+	  #Ponto_4{
+	  width:80px;
+	  height:80px;
+	  background-size:100%,100%;
+	  color:transparent;
+	  display:none;
+	  }
+	  #Ponto_5{
+	  width:80px;
+	  height:80px;
+	  background-size:100%,100%;
+	  color:transparent;
+	  display:none;
+	  }
+	  #Ponto_6{
+	  color:#E9C55F;
+	  display:none;
+	  }
+	  #Ponto_7{
+	  width:80px;
+	  height:80px;
+	  background-size:100%,100%;
+	  color:transparent;
+	  display:none;
+	  }
+	  #Ponto_8{
+	  width:80px;
+	  height:80px;
+	  background-size:100%,100%;
+	  color:transparent;
+	  
+	  }
+	  
+	  .SobrePosicaoAnimada{
+	  position:fixed;
+	  z-index:2000;
+	  left:0;
+	  top:0;
+	  right:0;
+	  bottom:0;
+	  width:100%;
+	  height:50%;
+	  background-image:url("image/grande_ganho.png");
+	  background-repeat:no-repeat;
+	  background-position:center;
+	  background-size:90%,90%;
+	  background-color:#00000000;
+	  //transform:translate(-35%,-20%);
+	  
+	  margin-top:50%;
+	  }
+	  
+	  .AnimatedFragment{
+	  position:fixed;
+	  z-index:2000;
+	  left:0;
+	  top:0;
+	  right:0;
+	  bottom:0;
+	  width:100%;
+	  height:50%;
+	  
+	  background-image:url("image/po.gif");
+	  background-repeat:no-repeat;
+	  
+	 // background-size:30%30%;
+	 background-size:40%40%;
+	  background-color:#00000000;
+	  
+	  //transform:translate(35%,20%);
+	  
+	  background-position:top,center;
+	  //margin-top:50%;
+	  margin-top:40%;
+	  padding-top:60%;
+	  }
+	  
+	  .ViewAnimatedFragment{
+	  position:fixed;
+	  z-index:2002;
+	  left:0;
+	  top:0;
+	  right:0;
+	  bottom:0;
+	  width:100%;
+	  height:100%;
+	  background-color:#0000AAAA;
+	  display:none;
+	  }
+	  
+	  .ViewInformation{
+	 // padding-top:10%;
+	  //padding-bottom:10%;
+	  width:100%;
+	  height:40%;
+	  display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	  align-items:center;
+	  background-color:red;
+	  }
+	  
+	  .CardInfo{
+	  margin-left:3%;
+	  margin-right:3%;
+	  width:30%;
+	  height:50%;
+	  display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	  align-items:center;
+	  background-color:#BD0102;
+	  border-radius:10px;
+	  }
+	  
+	  .CardInfoIcon{
+	  width:30%;
+	  height:80%;
+	  padding:5px;
+	  background-size:100%,100%;
+	  background-repeat:no-repeat;
+	  
+	  }
+	  
+	  .CardInfoValor{
+	  width:80%;
+	  height:100%;
+	  font-size:30px;
+	  display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	  align-items:center;
+	  color:white;
+	  }
+	  
+	  .ViewButtonFunction{
+	  width:100%;
+	  height:30%;
+	  display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	  align-items:center;
+	  background-color:transparent;
+	  }
+	  
+	  .ButtonFunction{
+	  width:20%;
+	  height:100%;
+	  background-size:40%,40%;
+	  background-repeat:no-repeat;
+	  background-position:center;
+	  }
+	  
+	  .Restart{
+	  position:fixed;
+	  width:100%;
+	  height:14%;
+	  margin-top:30%;
+	  background-image:url("image/restart.png");
+	  background-size:50%,100%;
+	  background-repeat:no-repeat;
+	  background-position:center;
+	  z-index:2004;
+	  
+	 // background-color:red;
+	  }
+	  
+	  
+	  .ViewErrorDialog{
+	  position:fixed;
+	 // z-index:3000;
+	  left:0;
+	  top:0;
+	  right:0;
+	  bottom:0;
+	  width:100%;
+	  height:100%;
+	 display:none;
+	  }
+	  
+	  .ErrorDialogAnimatedImage{
+	  width:100%;
+	  height:30%;
+	  background-image:url("image/avatar.gif");
+	  background-repeat:no-repeat;
+	  background-position:bottom;
+	  background-size:40%,40%;
+	  background-color:#0000AAAA;
+	  
+	  border:0px;
+	  margin:0px;
+	  }
+	  
+	  .ErrorDialogMessage{
+	  width:100%;
+	  height:40%;
+	  background-image:url("image/saldo_insuficiente.png");
+	  background-repeat:no-repeat;
+	  background-position:center;
+	  background-size:100%,100%;
+	  background-color:#0000AAAA;
+	  
+	  border:0px;
+	  margin:0px;
+	  }
+	  
+	  .ErrorDialogButtonRecarregar{
+	  width:100%;
+	  height:30%;
+	  background-image:url("image/recarregar.png");
+	  background-repeat:no-repeat;
+	  background-position:top;
+	  background-size:50%,50%;
+	  background-color:#0000AAAA;
+	  
+	  border:0px;
+	  margin:0px;
+	  }
+	  
+	  </style>
+	  
+	<center>
+	  
+	  
+	  <!--<div class="Fundo">-->
+
+	 
+	  
+	  <div class="DesignCenter">
+		<div class="LISTA_1">
+		</div>
+		<div class="LIST_SPACE">
+		</div>
+		<div class="LISTA_2">
+		</div>
+		<div class="LIST_SPACE">
+		</div>
+		<div class="LISTA_3">
+		</div>
+	  </div> 
+	  
+	  
+	  <div class="ViewDesigner">
+		
+		
+		<!--<div class="DesignTop">
+		<hr class="TopImage"/>
+		</div>-->
+		<!--<hr class="Telhado_1"/>-->
+		<div class="VIEW_LISTAS">
+<!--
+		<div class="LISTA_1">
+		</div>
+		<div class="LIST_SPACE">
+		</div>
+		<div class="LISTA_2">
+		</div>
+		<div class="LIST_SPACE">
+		</div>
+		<div class="LISTA_3">
+		</div>-->
+		
+		</div>
+		
+		
+		
+		
+		<!--<div class="DesignBottom">-->
+		  
+		  <!--
+		<div class="ViewInformation">
+		  <div class="CardInfo">
+			<img src="image/carteira.png" class="CardInfoIcon"/>
+			<h1 class="CardInfoValor">10000</h1>
+		  </div>
+		  <div class="CardInfo">
+			<img src="image/aposta.png" class="CardInfoIcon"/>
+			<h1 class="CardInfoValor">100</h1>
+		  </div>
+		  <div class="CardInfo">
+			<img src="image/ganho.png" class="CardInfoIcon"/>
+			<h1 class="CardInfoValor">0</h1>
+		  </div>
+		
+		  </div>-->
+		  
+		  <!--
+		  <br>
+			<br>
+		  <div class="ViewButtonFunction">
+			<img src="image/transparent.png" style="background-image:url(image/turbo.png)" class="ButtonFunction" />
+			<img src="image/transparent.png" style="background-image:url(image/menos.png)" class="ButtonFunction" />
+			<button class="PLAY"></button>
+			<img src="image/transparent.png" style="background-image:url(image/mais.png)" class="ButtonFunction" />
+			<img src="image/transparent.png" style="background-image:url(image/auto.png)" class="ButtonFunction" />
+		  </div>-->
+		
+		<!--</div>-->
+		
+		
+		
+	  </div>
+	  
+
+		<!--
+	  <div class="ViewAnimatedFragment">
+	  <div class="AnimatedFragment">
+	  <div class="SobrePosicaoAnimada"/>
+	  </div>
+		<div class="ViewPontos">
+		  <h1 id="Ponto_1">0</h1>
+		  <h1 id="Ponto_2">.</h1>
+		  <h1 id="Ponto_3">0</h1>
+		  <h1 id="Ponto_4">0</h1>
+		  <h1 id="Ponto_5">0</h1>
+		  <h1 id="Ponto_6">,</h1>
+		  <h1 id="Ponto_7">0</h1>
+		  <h1 id="Ponto_8">0</h1>
+		</div>
+		<div class="Restart"/>
+	  </div>-->
+	 
+	
+	
+	
+	 
+	</center>
+	<!--
+	<div class="ViewErrorDialog">
+	  <hr class="ErrorDialogAnimatedImage"/>
+	  <hr class="ErrorDialogMessage"/>
+	  <hr class="ErrorDialogButtonRecarregar"/>
+	</div>-->
+	
+	<script>
+	  
+	  var NoModoAutomatico = false;
+	  
+	  var LIST_1_BLOCOS_HEIGHT = 0;
+	  
+	  var LIST_2_BLOCOS_HEIGHT = 0;
+	  
+	  var LIST_3_BLOCOS_HEIGHT = 0;
+	  
+	  
+	  var BLOCO_HEIGHT = 0;
+	  
+	  var PLAY_ENABLED = true;
+	  
+	 // var PLAY = document.getElementsByClassName("PLAY")[0];
+	  
+	  </script>
+	  
+	  <script>
+		
+		var va = document.getElementsByClassName("VIEW_LISTAS")[0];
+		
+		BLOCO_HEIGHT = parseInt(va.clientHeight/3);
+		
+		if(BLOCO_HEIGHT>210){
+		BLOCO_HEIGHT=BLOCO_HEIGHT+15;
+		}
+		
+		//alert(BLOCO_HEIGHT);
+		
+		</script>
+	
+	<script>
+	  
+	  setTimeout(function(){
+	  clearLists();
+	  
+	  C();
+	  
+	  B();
+	  },2000);
+	  
+	  var PLAY = document.getElementsByClassName("PLAY")[0];
+	  
+	  PLAY.onclick = function(){
+	  
+	  if(VerificarSePossuiSaldoSuficiente()==true){
+	  
+	  if(PLAY_ENABLED==true){
+	  
+	  HabilitarButtonPlay(false);
+	  
+	  clearLists();
+	  
+	  C();
+	  
+	  B();
+	  
+	  AtualizarSaldoDaCarteira();
+	  
+	  }
+	 
+	  }
+	  
+	  };
+	  
+	  //};
+	  
+	//  function start(){
+	  
+	  //setTimeout(function(){
+	  
+	 // C();
+	  
+	  //playAudio();
+	  
+	  function B(){
+	  
+	 // setTimeout(function(){
+	  start2();
+	//  },2000/8);
+	  
+	  }
+	  
+	  C();
+	  
+	  //clearLists();
+	  
+	  function C(){
+	  
+	  
+	  /*
+	  setTimeout(function(){
+		//alert("$");
+		start2();
+		},2000/8);*/
+	  
+	  var LISTA_1 = document.getElementsByClassName("LISTA_1")[0];
+	  
+	  var LISTA_2 = document.getElementsByClassName("LISTA_2")[0];
+	  
+	  var LISTA_3 = document.getElementsByClassName("LISTA_3")[0];
+	  
+	  
+	  for(var i = 0; i < 1*30; i++){
+	  
+	  LIST_1_BLOCOS_HEIGHT = LIST_1_BLOCOS_HEIGHT+BLOCO_HEIGHT/*218*/;
+	  
+	  LISTA_1.appendChild(BLOCOS_DA_LISTA());
+	  
+	  }
+	  
+	  for(var i = 0; i < 1*30; i++){
+	  
+	  LIST_2_BLOCOS_HEIGHT = LIST_2_BLOCOS_HEIGHT+/*218*/BLOCO_HEIGHT;
+	  
+	  LISTA_2.appendChild(BLOCOS_DA_LISTA());
+	  
+	  }
+	  
+	  for(var i = 0; i < 1*30; i++){
+	  
+	  LIST_3_BLOCOS_HEIGHT = LIST_3_BLOCOS_HEIGHT+/*218*/BLOCO_HEIGHT;
+	  
+	  LISTA_3.appendChild(BLOCOS_DA_LISTA());
+	  
+	  }
+	  
+	  LISTA_1.style.transform = "translate(0px,-"+LIST_1_BLOCOS_HEIGHT+"px)";
+	  
+	  LISTA_2.style.transform = "translate(0px,-"+LIST_2_BLOCOS_HEIGHT+"px)";
+	  
+	  LISTA_3.style.transform = "translate(0px,-"+LIST_3_BLOCOS_HEIGHT+"px)";
+	  
+	  
+	  
+	  function BLOCOS_DA_LISTA(){
+	  
+	  var bloco_fundo = document.createElement("div");
+	  
+	  bloco_fundo.setAttribute("class","Bloco_fundo");
+	  
+	  bloco_fundo.style.height = BLOCO_HEIGHT+"px";
+	  
+	  var bloco = document.createElement("div");
+	  
+	  bloco.setAttribute("class","Bloco");
+	  
+	  bloco.style.height = BLOCO_HEIGHT+"px";
+	 // bloco.innerHTML=""+randomEmojis();
+	 
+	 bloco.style.backgroundImage="url("+randomEmojis()+")";
+	 
+	 bloco_fundo.appendChild(bloco);
+	 
+	  return bloco_fundo;
+	 
+	  }
+	  
+	  function randomEmojis(){
+	 // return "image/gueixa.png";
+		//return "image/icon_1.png";
+		var maximum = 9;
+		var minimum = 1;
+		
+		var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+
+		if(randomnumber==1){
+		return "image/gueixa.png";
+		//return "🧧";
+		}
+		if(randomnumber==2){
+		//return "🤑";
+		return "image/guarda-chuva.png";
+		}
+		if(randomnumber==3){
+		//return "💸";
+		return "image/leque.png";
+		}
+		if(randomnumber==4){
+		//return "💰";
+		return "image/lanterna.png";
+		}
+		if(randomnumber==5){
+		//return "🏦";
+		return "image/caderno.png";
+		}
+		if(randomnumber==6){
+		//return "💲";
+		return "image/chapeu.png";
+		}
+		if(randomnumber==7){
+		//return "💵";
+		return "image/capacete.png";
+		}
+		if(randomnumber==8){
+		//return "💳";
+		return "image/espada.png";
+		}
+		if(randomnumber==9){
+		//return "💱";
+		return "image/icon_5.png";
+		}
+		}
+		
+		
+		
+		}
+		
+		
+		
+	  </script>
+	  
+	  <script>
+		
+		function start2(){
+		
+		//setTimeout(function(){
+		
+		var COUNT_1 = -LIST_1_BLOCOS_HEIGHT;
+		
+		var COUNT_2 = -LIST_2_BLOCOS_HEIGHT;
+		
+		var COUNT_3 = -LIST_3_BLOCOS_HEIGHT;
+		
+		
+		var LISTA_1 = document.getElementsByClassName("LISTA_1")[0];
+	  
+		var LISTA_2 = document.getElementsByClassName("LISTA_2")[0];
+	  
+		var LISTA_3 = document.getElementsByClassName("LISTA_3")[0];
+	  
+		
+		
+		
+		setTimeout(function(){
+		
+		translateBlock_1();
+		
+		},1000/8);
+		
+		setTimeout(function(){
+		
+		translateBlock_2();
+		
+		},1100/8);
+		
+		setTimeout(function(){
+		
+		translateBlock_3();
+		
+		},1200/8);
+		
+		
+		
+		
+		function translateBlock_1(){
+		
+		var Interval_1 = setInterval(function(){
+		
+		if(COUNT_1 != 0){
+		
+		COUNT_1 = COUNT_1 +/*218*/BLOCO_HEIGHT;
+		
+		LISTA_1.style.transform = "translate(0px,"+COUNT_1+"px";
+		
+		}else{
+		
+		clearInterval(Interval_1);
+		
+		}
+		
+		},1000/20);
+		
+		}
+		
+		function translateBlock_2(){
+		
+		var Interval_2 = setInterval(function(){
+		
+		if(COUNT_2 != 0){
+		
+		COUNT_2 = COUNT_2 +/*218*/BLOCO_HEIGHT;
+		
+		LISTA_2.style.transform = "translate(0px,"+COUNT_2+"px";
+		
+		}else{
+		
+		clearInterval(Interval_2);
+		
+		}
+		
+		},1000/20);
+		
+		}
+		
+		function translateBlock_3(){
+		
+		var Interval_3 = setInterval(function(){
+		
+		if(COUNT_3 != 0){
+		
+		COUNT_3 = COUNT_3 +/*218*/BLOCO_HEIGHT;
+		
+		LISTA_3.style.transform = "translate(0px,"+COUNT_3+"px";
+		
+		}else{
+		
+		clearInterval(Interval_3);
+		
+		//
+		verificar();
+		//
+		
+		}
+		
+		},1000/20);
+		
+		}
+		
+		
+		
+		//},4000);
+		
+		}
+		
+		
+	  </script>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <script>
+	  //Verificar a roleta
+	  
+	  function verificar(){
+	  
+	 // alert("$");
+	 
+	 var LISTA_DE_SLOTS_IGUAIS = 0;
+	 
+	 var LISTA_1_FUNDO = document.getElementsByClassName("LISTA_1")[0];
+	  
+		var LISTA_2_FUNDO = document.getElementsByClassName("LISTA_2")[0];
+	  
+		var LISTA_3_FUNDO = document.getElementsByClassName("LISTA_3")[0];
+	  
+	  
+		var LISTA_1 = LISTA_1_FUNDO.children[0]; //document.getElementsByClassName("LISTA_1")[0];
+	  
+		var LISTA_2 = LISTA_2_FUNDO.children[0]; //document.getElementsByClassName("LISTA_2")[0];
+	  
+		var LISTA_3 = LISTA_3_FUNDO.children[0]; //document.getElementsByClassName("LISTA_3")[0];
+	  
+		var LISTA_4 = LISTA_1_FUNDO.children[1]; //document.getElementsByClassName("LISTA_3")[0];
+	  
+		var LISTA_5 = LISTA_2_FUNDO.children[1];
+		
+		var LISTA_6 = LISTA_3_FUNDO.children[1];
+		
+		var LISTA_7 = LISTA_1_FUNDO.children[2]; //document.getElementsByClassName("LISTA_3")[0];
+	  
+		var LISTA_8 = LISTA_2_FUNDO.children[2];
+		
+		var LISTA_9 = LISTA_3_FUNDO.children[2];
+		
+		
+		//alert(LISTA_4.children[0].style.backgroundImage);
+		//alert(LISTA_4);
+		//alert(LISTA_2);
+		//alert(LISTA_3);
+		
+		var ITEM_1_LIST_1 = LISTA_1.children[0].style.backgroundImage;
+		
+		var ITEM_1_LIST_2 = LISTA_2.children[0].style.backgroundImage;
+		
+		var ITEM_1_LIST_3 = LISTA_3.children[0].style.backgroundImage;
+		
+		//alert(ITEM_1_LIST_1);
+		//alert(ITEM_1_LIST_2);
+		//alert(ITEM_1_LIST_3);
+		
+		var ITEM_2_LIST_1 = LISTA_4.children[0].style.backgroundImage;
+		
+		var ITEM_2_LIST_2 = LISTA_5.children[0].style.backgroundImage;
+		
+		var ITEM_2_LIST_3 = LISTA_6.children[0].style.backgroundImage;
+		
+		//alert(ITEM_2_LIST_1);
+		//alert(ITEM_2_LIST_2);
+		//alert(ITEM_2_LIST_3);
+		
+		var ITEM_3_LIST_1 = LISTA_7.children[0].style.backgroundImage;
+		
+		var ITEM_3_LIST_2 = LISTA_8.children[0].style.backgroundImage;
+		
+		var ITEM_3_LIST_3 = LISTA_9.children[0].style.backgroundImage;
+		
+		//alert(ITEM_3_LIST_1);
+		//alert(ITEM_3_LIST_2);
+		//alert(ITEM_3_LIST_3);
+		
+		
+		if(ITEM_1_LIST_1==ITEM_1_LIST_2&&ITEM_1_LIST_2==ITEM_1_LIST_3){
+		
+		LISTA_1.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_2.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_3.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_DE_SLOTS_IGUAIS=LISTA_DE_SLOTS_IGUAIS+1;
+		
+		}
+		
+		
+		if(ITEM_2_LIST_1==ITEM_2_LIST_2&&ITEM_2_LIST_2==ITEM_2_LIST_3){
+		
+		LISTA_4.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_5.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_6.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_DE_SLOTS_IGUAIS=LISTA_DE_SLOTS_IGUAIS+1;
+		
+		}
+		
+		
+		if(ITEM_3_LIST_1==ITEM_3_LIST_2&&ITEM_3_LIST_2==ITEM_3_LIST_3){
+		
+		LISTA_7.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_8.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_9.style.backgroundImage="url(image/luz.png)";
+		
+		LISTA_DE_SLOTS_IGUAIS=LISTA_DE_SLOTS_IGUAIS+1;
+		
+		}
+		
+		if(LISTA_DE_SLOTS_IGUAIS>0){
+		
+		AtualizarSaldoDosGanhos(LISTA_DE_SLOTS_IGUAIS);
+		
+		//NewGanho(3,0,0,0,9,0,0);
+		
+		HabilitarButtonPlay(true);
+		
+		AvatarAnimation();
+		
+		}else{
+		//
+		
+		if(NoModoAutomatico == true){
+		
+		if(VerificarSePossuiSaldoSuficiente()==true){
+		
+		HabilitarButtonPlay(false);
+		
+		clearLists();
+		
+		C();
+		
+		B();
+		
+		AtualizarSaldoDaCarteira();
+		
+		}
+		
+		}else{
+		
+		HabilitarButtonPlay(true);
+		
+		}
+		
+		}
+		
+		}
+		
+	  </script>
+	  
+	  <script>
+		
+	  function clearLists(){
+	  
+	  //return;
+	
+	  var LISTA_1 = document.getElementsByClassName("LISTA_1")[0];
+	  
+	  var LISTA_2 = document.getElementsByClassName("LISTA_2")[0];
+	  
+	  var LISTA_3 = document.getElementsByClassName("LISTA_3")[0];
+	  
+	  //new
+	  //var START = document.getElementById("PLAY");
+	  
+	// START.onclick = function(){
+	  
+	//  alert("$");
+	  
+	  LISTA_1.innerHTML = "";
+	  
+	  LISTA_2.innerHTML = "";
+	  
+	  LISTA_3.innerHTML = "";
+	  
+	  LIST_1_BLOCOS_HEIGHT = 0;
+	  
+	  LIST_2_BLOCOS_HEIGHT = 0;
+	  
+	  LIST_3_BLOCOS_HEIGHT = 0;
+	  
+	 // C();
+	  
+	  //new
+	//  B();
+	  
+	  //new
+	//  playAudio();
+	  
+	//  };
+	
+	  //playAudio();
+	  
+		}
+		
+		</script>
+		
+		<script>
+		  
+		  function AvatarAnimation(){
+		  
+		 // alert("$");
+		// playAudio();
+		  
+		  var TopImage = document.getElementsByClassName('TopImage')[0];
+		  
+		  TopImage.style.backgroundImage="url(image/avatar_3.gif)";
+		  
+		  //TopImage.style.backgroundSize="cover";
+		  
+		 // alert("$$");
+		  
+		  setTimeout(function(){
+		  
+		  TopImage.style.backgroundImage="url(image/avatar_2.gif)";
+		  
+		 // alert("*");
+		  
+		  //TopImage.style.backgroundSize="auto";
+		  
+		  },5000);
+		  
+		  setTimeout(function(){
+		  
+		  TopImage.style.backgroundImage="url(image/avatar.gif)";
+		  
+		  //TopImage.style.backgroundSize="auto";
+		  
+		  },10000);
+		  
+		  }
+		//  TopImage.style.width="200px";
+		  
+		  //TopImage.style.height="200px";
+		  
+		  
+		  </script>
+		  
+		  <script>
+			
+			//var audio = document.getElementById("myAudio");
+			
+			function playAudio(){
+			
+			var audio = new Audio();
+			
+			audio.autoplay = "true";
+			
+			audio.src = "a.mp3";
+			
+			audio.play;
+			
+			}
+			
+			</script>
+		
+			<script>
+			 // NewGanho(5,0,1,0,0,0,0);
+			  function NewGanho(
+			  GanhoLength
+			  ,Valor_1
+			  ,Valor_2
+			  ,Valor_3
+			  ,Valor_4
+			  ,Valor_5
+			  ,Valor_6){
+			  
+			  document.getElementsByClassName("ViewAnimatedFragment")[0].style.display="block";
+			  
+			 // var GanhoLength = 3;
+			  
+			  var Velocity = 0;
+			  
+			  
+			  var quantia_de_reais_a_duplicar_part_1 = 1;
+			  
+			  var quantia_maxima_de_reais_a_chegar_part_1 = 9;
+			  
+			  var quantia_de_reais_a_duplicar_part_2 = 1;
+			  
+			  var quantia_maxima_de_reais_a_chegar_part_2 = 9;
+			  
+			  var quantia_de_reais_a_duplicar_part_3 = 1;
+			  
+			  var quantia_maxima_de_reais_a_chegar_part_3 = 9;
+			  
+			  
+			  var quantia_de_centavos_a_duplicar_part_1 = 1;
+			  
+			  var quantia_maxima_de_centavos_a_chegar_part_1 = 9;
+			  
+			  var quantia_de_centavos_a_duplicar_part_2 = 1;
+			  
+			  var quantia_maxima_de_centavos_a_chegar_part_2 = 9;
+			  
+			  
+			  
+			  
+			  
+			  
+			//  var Valor_1 = 0;
+			 // var Valor_2 = 0;
+			 // var Valor_3 = 0;
+			 // var Valor_4 = 9;
+		//  var Valor_5 = 0;
+			 // var Valor_6 = 0;
+			  
+			  
+			  
+			  
+			  
+			  
+			  var Ponto_1 = document.getElementById("Ponto_1");
+			  
+			  Ponto_1.style.display="none";
+			  
+			 var Count_1 = 0;
+			 
+			 
+			 var Ponto_2 = document.getElementById("Ponto_2");
+			  
+			 Ponto_2.style.display="none";
+			 
+			  
+			  var Ponto_3 = document.getElementById("Ponto_3");
+			  
+			  Ponto_3.style.display="none";
+			  
+			 var Count_3 = 0;
+			 
+			  
+			  var Ponto_4 = document.getElementById("Ponto_4");
+			  
+			  Ponto_4.style.display="none";
+			  
+			 var Count_4 = 0;
+			  
+			  
+			  var Ponto_5 = document.getElementById("Ponto_5");
+			  
+			  Ponto_5.style.display="none";
+			  
+			 var Count_5 = 0;
+			 
+			 
+			 var Ponto_6 = document.getElementById("Ponto_6");
+			  
+			 Ponto_6.style.display="none";
+			 
+			  
+			 var Ponto_7 = document.getElementById("Ponto_7");
+			  
+			 Ponto_7.style.display="none";
+			 
+			 var Count_7 = 0;
+			 
+			 
+			  var Ponto_8 = document.getElementById("Ponto_8");
+			  
+			  var Count_8 = /*-1*/0;
+			  
+			  
+			  //Ponto_1.style.backgroundImage="url(image/avatar.gif)";
+			  
+			 // Ponto_1.style.backgroundSize = "(100px,100px)";
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  if(GanhoLength==3){
+			  Ponto_1.style.display="none";
+			  Ponto_2.style.display="none";
+			  Ponto_3.style.display="none";
+			  Ponto_4.style.display="none";
+			  Velocity=150;
+			  quantia_de_centavos_a_duplicar_part_1=1;
+			  quantia_de_centavos_a_duplicar_part_2=1;
+			  }
+			  if(GanhoLength==4){
+			  Ponto_1.style.display="none";
+			  Ponto_2.style.display="none";
+			  Ponto_3.style.display="none";
+			  Velocity=200;
+			  quantia_de_centavos_a_duplicar_part_1=3;
+			  quantia_de_centavos_a_duplicar_part_2=3;
+			  }
+			  if(GanhoLength==5){
+			  Ponto_1.style.display="none";
+			  Ponto_2.style.display="none";
+			  //Ponto_3.style.display="none";
+			  Velocity=250;
+			  quantia_de_centavos_a_duplicar_part_1=3;
+			  quantia_de_centavos_a_duplicar_part_2=3;
+			  
+			  if(Valor_2>1){
+			  quantia_de_centavos_a_duplicar_part_2=9;
+			  }
+			  
+			  if(Valor_2>3){
+			  quantia_de_centavos_a_duplicar_part_1=9;
+			  }
+			  
+			  }
+			  
+			  if(GanhoLength==6){
+			  Velocity=300;
+			  quantia_de_centavos_a_duplicar_part_1=9;
+			  quantia_de_centavos_a_duplicar_part_2=9;
+			  
+			  if(Valor_1>0){
+			  quantia_de_reais_a_duplicar_part_3=3;
+			  }
+			  
+			  if(Valor_1>2){
+			  quantia_de_reais_a_duplicar_part_3=9;
+			  }
+			  
+			  }
+			  
+			 // Velocity=8;
+			  
+			  
+			  
+			  
+			  
+			  
+			  var inter = setInterval(function(){
+			  
+			  if(Count_1==/*4*/Valor_1&&Count_3==/*8*/Valor_2&&Count_4==/*8*/Valor_3&&Count_5==/*8*/Valor_4&&Count_7==/*8*/Valor_5&&Count_8==/*8*/Valor_6){
+			  clearInterval(inter);
+			  
+			  return;
+			  }
+			  
+			  if(Count_3==/*9*//*8*/quantia_maxima_de_reais_a_chegar_part_1&&Count_4==/*9*//*8*/quantia_maxima_de_reais_a_chegar_part_2&&Count_5==/*9*//*8*/quantia_maxima_de_reais_a_chegar_part_3&&Count_7==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_2&&Count_8==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_2){
+			  
+			  Count_1= Count_1+/*1*/1;
+			  
+			  Ponto_2.style.display="block";
+			  
+			  Ponto_1.style.display="block";
+			  
+			  Ponto_1.innerText = Count_1;
+			  
+			  Ponto_1.style.backgroundImage="url("+"image/"+Count_1+"-Number-PNG.png)";
+			  
+			  //Ponto_2.style.display="block";
+			  
+			  Count_3=/*-1*//*0*/-quantia_de_reais_a_duplicar_part_1;
+			  
+			  }
+			  
+			  
+			  if(Count_4==quantia_maxima_de_reais_a_chegar_part_2/*9*//*8*/&&Count_5==/*9*//*8*/quantia_maxima_de_reais_a_chegar_part_3&&Count_7==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_1&&Count_8==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_2){
+			  
+			  Count_3= Count_3+/*1*//*2*/quantia_de_reais_a_duplicar_part_1;
+			  
+			  Ponto_3.style.display="block";
+			  
+			  Ponto_3.innerText = Count_3;
+			  
+			  Ponto_3.style.backgroundImage="url("+"image/"+Count_3+"-Number-PNG.png)";
+			  
+			  Count_4=/*-1*//*0*//*-1*/-quantia_de_reais_a_duplicar_part_2;
+			  
+			  }
+			  
+			  
+			  if(Count_5==/*9*//*8*/quantia_maxima_de_reais_a_chegar_part_3&&Count_7==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_1&&Count_8==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_2){
+			  
+			  Count_4= Count_4+/*1*//*2*/quantia_de_reais_a_duplicar_part_2;
+			  
+			  Ponto_4.style.display="block";
+			  
+			  Ponto_4.innerText = Count_4;
+			  
+			  Ponto_4.style.backgroundImage="url("+"image/"+Count_4+"-Number-PNG.png)";
+			  
+			  Count_5=/*-1*//*0*//*-1*/-quantia_de_reais_a_duplicar_part_3;
+			  
+			  //new
+			 // clearInterval(inter);
+			  
+			  }
+			  
+			  
+			  if(Count_7==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_1&&Count_8==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_2){
+			  
+			  Count_5= Count_5+/*1*//*2*/quantia_de_reais_a_duplicar_part_3;
+			  
+			  Ponto_6.style.display="block";
+			  
+			  Ponto_5.style.display="block";
+			  
+			  Ponto_5.innerText = Count_5;
+			  
+			  Ponto_5.style.backgroundImage="url("+"image/"+Count_5+"-Number-PNG.png)";
+			  
+			  Count_7=/*0*//*-1*/-quantia_de_centavos_a_duplicar_part_1;
+			  
+			 // return;
+			  }
+			  
+			  
+			  if(Count_8==/*9*//*8*/quantia_maxima_de_centavos_a_chegar_part_2){
+			
+			  Count_7=Count_7+/*1*//*4*/quantia_de_centavos_a_duplicar_part_1;
+			 
+			  Ponto_7.style.display="block";
+			  
+			  Ponto_7.innerText = Count_7;
+			  
+			  Ponto_7.style.backgroundImage="url("+"image/"+Count_7+"-Number-PNG.png)";
+			  
+			  Count_8=/*-1*//*0*//*-1*/-quantia_de_centavos_a_duplicar_part_2;
+			  
+			  }
+			  
+			  Count_8 = Count_8+/*1*//*4*/quantia_de_centavos_a_duplicar_part_2;
+			  
+			  Ponto_8.innerText = Count_8;
+			  
+			  Ponto_8.style.backgroundImage="url("+"image/"+Count_8+"-Number-PNG.png)";
+			  
+			  },1000/Velocity/*000/512*/);
+			
+			  }
+			  
+			  </script>
+			  
+			  <script>
+				
+				function AtualizarSaldoDaCarteira(){
+				
+			    //var ValorDoGanho = document.getElementsByClassName("CardInfoValor")[2];
+				
+				var ValorDaCarteira = document.getElementsByClassName("CardInfoValor")[0];
+				
+				
+				var ValorDoSaldoDaCarteira = ValorDaCarteira.innerText;
+				
+				ValorDoSaldoDaCarteira = ValorDoSaldoDaCarteira.replace("R$","");
+				
+				ValorDoSaldoDaCarteira = ValorDoSaldoDaCarteira.replace(" ","");
+				
+				ValorDoSaldoDaCarteira = ValorDoSaldoDaCarteira.replace(".","");
+				
+				ValorDoSaldoDaCarteira = ValorDoSaldoDaCarteira.replace(",00","");
+				
+				
+				var ValorDaAposta = document.getElementsByClassName("CardInfoValor")[1];
+			
+				
+				var ValorDoSaldoDaAposta = ValorDaAposta.innerText;
+				
+				ValorDoSaldoDaAposta = ValorDoSaldoDaAposta.replace("R$","");
+				
+				ValorDoSaldoDaAposta = ValorDoSaldoDaAposta.replace(" ","");
+				
+				ValorDoSaldoDaAposta = ValorDoSaldoDaAposta.replace(".","");
+				
+				ValorDoSaldoDaAposta = ValorDoSaldoDaAposta.replace(",00","");
+				
+				
+				ValorDaCarteira.innerText = obterValorEmFormatoDeDinheiro(ValorDoSaldoDaCarteira-ValorDoSaldoDaAposta);
+				//ValorDaAposta.innerText = obterValorEmFormatoDeDinheiro(ValorDaAposta.innerText);
+				//ValorDoGanho.innerText = obterValorEmFormatoDeDinheiro(ValorDoGanho.innerText);
+				
+				}
+				
+				</script>
+				
+				<script>
+				  
+				var Diminuir = document.getElementsByClassName("ButtonFunction")[1];
+				  
+				Diminuir.onclick = function(){
+				
+				var ValorDaAposta = document.getElementsByClassName("CardInfoValor")[1].innerText;
+				
+				ValorDaAposta = ValorDaAposta.replace("R$","");
+				
+				ValorDaAposta = ValorDaAposta.replace(" ","");
+				
+				ValorDaAposta = ValorDaAposta.replace(".","");
+				
+				ValorDaAposta = ValorDaAposta.replace(",00","");
+				
+				var ValorDoSaldoDaAposta = ValorDaAposta;
+				
+				if(ValorDoSaldoDaAposta!=1){
+				
+				var ValorDaAposta = document.getElementsByClassName("CardInfoValor")[1];
+				
+				ValorDaAposta.innerText = obterValorEmFormatoDeDinheiro(ValorDoSaldoDaAposta-1);
+				
+				}
+				
+				};
+				
+				
+				
+				
+				var Aumentar = document.getElementsByClassName("ButtonFunction")[2];
+				  
+				Aumentar.onclick = function(){
+				
+				var ValorDaAposta = document.getElementsByClassName("CardInfoValor")[1].innerText;
+				
+				ValorDaAposta = ValorDaAposta.replace("R$","");
+				
+				ValorDaAposta = ValorDaAposta.replace(" ","");
+				
+				ValorDaAposta = ValorDaAposta.replace(".","");
+				
+				ValorDaAposta = ValorDaAposta.replace(",00","");
+				
+				var ValorDoSaldoDaAposta = parseInt(ValorDaAposta);
+				
+				if(ValorDoSaldoDaAposta!=100){
+				
+				var ValorDaAposta = document.getElementsByClassName("CardInfoValor")[1];
+				
+				ValorDaAposta.innerText = obterValorEmFormatoDeDinheiro(ValorDoSaldoDaAposta+1);
+				
+				}
+				
+				};
+				  
+				</script>
+				
+				
+				<script>
+				  
+				function AtualizarSaldoDosGanhos(LISTA_DE_SLOTS_IGUAIS){
+				
+				var Multiplicar = 9;
+				
+				Multiplicar = LISTA_DE_SLOTS_IGUAIS * Multiplicar;
+				
+				var ValorDaAposta = document.getElementsByClassName("CardInfoValor")[1].innerText;
+				
+				ValorDaAposta = ValorDaAposta.replace("R$","");
+				
+				ValorDaAposta = ValorDaAposta.replace(" ","");
+				
+				ValorDaAposta = ValorDaAposta.replace(".","");
+				
+				ValorDaAposta = ValorDaAposta.replace(",00","");
+				
+				var ValorDoSaldoDaAposta = ValorDaAposta;
+				
+				
+				var ValorDosGanhosDaAposta = document.getElementsByClassName("CardInfoValor")[2].innerText;
+				
+				ValorDosGanhosDaAposta = ValorDosGanhosDaAposta.replace("R$","");
+				
+				ValorDosGanhosDaAposta = ValorDosGanhosDaAposta.replace(" ","");
+				
+				ValorDosGanhosDaAposta = ValorDosGanhosDaAposta.replace(".","");
+				
+				ValorDosGanhosDaAposta = ValorDosGanhosDaAposta.replace(",00","");
+				
+				var ValorDoSaldoDosGanhosDaAposta = ValorDosGanhosDaAposta;
+				
+				
+				var Valor = parseInt(Multiplicar*ValorDoSaldoDaAposta)+parseInt(ValorDoSaldoDosGanhosDaAposta);
+				
+				
+				var ValorDosGanhosDaAposta = document.getElementsByClassName("CardInfoValor")[2];
+				
+				ValorDosGanhosDaAposta.innerText = obterValorEmFormatoDeDinheiro(Valor);
+				
+				
+				var ValorCount = ValorDosGanhosDaAposta.innerText;
+				
+				ValorCount=ValorCount.replace("R$","");
+				ValorCount=ValorCount.replace(" ","");
+				ValorCount=ValorCount.replace(",","");
+				
+				//alert(ValorCount.length-1);
+				
+				//alert(ValorCount);
+				
+				var Valor_Parte_1 = 0;
+				var Valor_Parte_2 = 0;
+				var Valor_Parte_3 = 0;
+				var Valor_Parte_4 = 0;
+				var Valor_Parte_5 = 0;
+				var Valor_Parte_6 = 0;
+				
+				//alert(ValorCount.length);
+				
+				var ValorCountLength = 0;
+				
+				if(ValorCount.length-1==7){
+				Valor_Parte_1=ValorCount.substring(1,2);
+				Valor_Parte_2=ValorCount.substring(3,4);
+				Valor_Parte_3=ValorCount.substring(4,5);
+				Valor_Parte_4=ValorCount.substring(5,6);
+				Valor_Parte_5=ValorCount.substring(7,8);
+				Valor_Parte_6=ValorCount.substring(8,9);
+				
+			    ValorCountLength=2;
+				
+				}
+				
+				if(ValorCount.length-1==5){
+				Valor_Parte_2=ValorCount.substring(1,2);
+				Valor_Parte_3=ValorCount.substring(2,3);
+				Valor_Parte_4=ValorCount.substring(3,4);
+				Valor_Parte_5=ValorCount.substring(4,5);
+				Valor_Parte_6=ValorCount.substring(5,6);
+				
+				ValorCountLength=1;
+				
+				}
+				
+				NewGanho(ValorCount.length-ValorCountLength,Valor_Parte_1,Valor_Parte_2,Valor_Parte_3,Valor_Parte_4,Valor_Parte_5,Valor_Parte_6);
+				
+				}
+				  
+				</script>
+				
+				<script>
+				  
+				  var ModoAutomatico = document.getElementsByClassName("ButtonFunction")[3];
+				  
+				  ModoAutomatico.onclick = function(){
+				  
+				  if(NoModoAutomatico==false){
+				  
+				  NoModoAutomatico = true;
+				  alert("No Modo Automatico Habilitado");
+				  }else{
+				  
+				  NoModoAutomatico = false;
+				  alert("No Modo Automatico Desabilitado");
+				  }
+				  
+				  
+				  
+				  };
+				  
+				  </script>
+				
+				<script>
+				  
+				function VerificarSePossuiSaldoSuficiente(){
+				  
+				var ValorDaCarteira = document.getElementsByClassName("CardInfoValor")[0];
+				
+				
+				var ValorDoSaldoDaCarteira = ValorDaCarteira.innerText;
+				
+				ValorDoSaldoDaCarteira = ValorDoSaldoDaCarteira.replace("R$","");
+				
+				ValorDoSaldoDaCarteira = ValorDoSaldoDaCarteira.replace(" ","");
+				
+				ValorDoSaldoDaCarteira = ValorDoSaldoDaCarteira.replace(".","");
+				
+				ValorDoSaldoDaCarteira = ValorDoSaldoDaCarteira.replace(",00","");
+				
+				
+				var ValorDaAposta = document.getElementsByClassName("CardInfoValor")[1];
+			
+				
+				var ValorDoSaldoDaAposta = ValorDaAposta.innerText;
+				
+				ValorDoSaldoDaAposta = ValorDoSaldoDaAposta.replace("R$","");
+				
+				ValorDoSaldoDaAposta = ValorDoSaldoDaAposta.replace(" ","");
+				
+				ValorDoSaldoDaAposta = ValorDoSaldoDaAposta.replace(".","");
+				
+				ValorDoSaldoDaAposta = ValorDoSaldoDaAposta.replace(",00","");
+				
+				//alert(ValorDoSaldoDaAposta);
+				
+				//alert(ValorDoSaldoDaCarteira);
+				
+				if(parseInt(ValorDoSaldoDaCarteira)==parseInt(ValorDoSaldoDaAposta)||parseInt(ValorDoSaldoDaCarteira)>parseInt(ValorDoSaldoDaAposta)){
+				
+				//alert("Saldo Suficiente");
+				
+				return true;
+				
+				}
+				
+				//alert("Saldo Insuficiente");
+				
+				ShowErrorDialog("saldo_insuficiente");
+				
+				return false;
+				
+				}
+				  
+			  </script>
+			  
+			  <script>
+				
+				function ShowErrorDialog(String){
+				
+				var ViewErrorDialog = document.getElementsByClassName("ViewErrorDialog")[0];
+				
+				ViewErrorDialog.style.display="table";
+				
+				ViewErrorDialog.onclick = function(){
+				
+				};
+				
+				var ErrorDialogMessage = document.getElementsByClassName("ErrorDialogMessage")[0];
+				//alert(String);
+				ErrorDialogMessage.style.backgroundImage="url(image/"+String+".png)";
+				
+				var ErrorDialogButtonRecarregar = document.getElementsByClassName("ErrorDialogButtonRecarregar")[0];
+				
+				ErrorDialogButtonRecarregar.onclick = function(){
+				//alert("");
+				ViewErrorDialog.style.display="none";
+				
+				};
+				
+				}
+				
+			</script>
+			  
+			  <script>
+				
+				var ValorDaCarteira = document.getElementsByClassName("CardInfoValor")[0];
+				var ValorDaAposta = document.getElementsByClassName("CardInfoValor")[1];
+				var ValorDoGanho = document.getElementsByClassName("CardInfoValor")[2];
+				
+				ValorDaCarteira.innerText = obterValorEmFormatoDeDinheiro(ValorDaCarteira.innerText);
+				ValorDaAposta.innerText = obterValorEmFormatoDeDinheiro(ValorDaAposta.innerText);
+				ValorDoGanho.innerText = obterValorEmFormatoDeDinheiro(ValorDoGanho.innerText);
+				
+				function obterValorEmFormatoDeDinheiro(valor){
+				
+				var formatter = new Intl.NumberFormat('pt-BR', {
+				style: 'currency',
+				currency: 'BRL',
+				});
+				
+				return formatter.format(valor);
+				
+				}
+				
+				</script>
+				
+				
+				  <script>
+				  
+				  var Restart = document.getElementsByClassName("Restart")[0];
+				  
+				  Restart.onclick = function(){
+				  
+				  document.getElementsByClassName("ViewAnimatedFragment")[0].style.display="none";
+			  
+				  };
+				  
+				  var ViewAnimatedFragment = document.getElementsByClassName("ViewAnimatedFragment")[0];
+				  
+				  ViewAnimatedFragment.onClick = function(){
+				  
+				  };
+				  
+				  </script>
+				  
+				  <script>
+					
+					function HabilitarButtonPlay(bool){
+					
+					//var Play = document.getElementsByClassName("PLAY")[0];
+					
+					//PLAY.disabled = false;
+					
+					//if(bool==true){
+					
+					PLAY_ENABLED = bool;
+					//PLAY.at.disabled = false;
+					
+					//alert("t");
+					
+					//}else{
+					
+					//PLAY.disabled = false;
+					
+					//alert("f");
+					
+					//}
+					
+					}
+					
+					</script>
+	  
+	  
+				  <script>
+		
+		
+					var body = document.getElementsByTagName("body")[0];
+		
+		
+					body.style.overflow="hidden";
+		
+		
+					var v = window.screen.height;
+		
+		
+					var DesignBottom = document.getElementsByClassName("DesignBottom")[0];
+		
+		
+					</script>
+	  
+  </body>
+</html>		
